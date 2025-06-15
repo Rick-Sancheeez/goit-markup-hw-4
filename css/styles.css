@@ -17,7 +17,7 @@ a {
 
 header {
     background-color: white;
-    border-bottom: 1px solid #e7e9fc;
+    /*  border-bottom: 1px solid #e7e9fc;  */
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -88,6 +88,31 @@ nav .link:focus {
     color: #404bbf;
 }
 
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav .un-list li::after {
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    content: "";
+
+    position: absolute;
+    bottom: -5px;
+    transition-property: transform 150ms ease-in-out;
+}
+
+nav .un-list li:hover::after {
+    transform: translateY(-4px);
+}
+
 .address {
     font-style: normal;
     display: flex;
@@ -122,12 +147,15 @@ nav .link:focus {
 
 .sec-main {
     background-color: #2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/1st-section/backgroung\ image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
     padding: 188px 0;
 }
 
-.sec-main .container {
 
-}
 
 .sec-main .title {
     color: white;
@@ -186,7 +214,23 @@ nav .link:focus {
   overflow: hidden;
 }
 
+.qualities .list .container {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    padding: 24px 0;
+    background-color: #F4F4FD;
+   
+    
+}
+
 .qualities .title {
+    width: 100%;
+    text-align: left;
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
@@ -203,14 +247,18 @@ nav .link:focus {
     letter-spacing: 0.02em;
 }
 
-.qualities .container .ul-list {
+.qualities .ul-list {
     display: flex;
     gap: 24px;
+
 }
 
 .qualities ul li {
     width: calc((100% - 72px) / 4);
 }
+
+
+
 /* section 3 "Our Team" */
 
 .our-team {
@@ -248,12 +296,12 @@ nav .link:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
-.our-team li {
+.our-team .list li {
     background-color: white;
     width: 264px;
-    height: 380px;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
     
@@ -268,8 +316,32 @@ nav .link:focus {
 
 
 .our-team .team-member .container {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
+
+.our-team .un-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.our-team .un-list .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.our-team .un-list .link:hover {
+    background-color: #404BBF;
+}
+
+
+
 
 /* Our portfolio */
 .portfolio {
