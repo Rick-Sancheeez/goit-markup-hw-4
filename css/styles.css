@@ -448,6 +448,10 @@ nav .un-list li:hover::after {
     transform: translate(0);
 }
 
+.portfolio .list:hover .paragraph {
+    transform: translate(0);
+}
+
 .portfolio .title-third {
     color: #2e2f42;
     font-weight: 500;
