@@ -116,10 +116,6 @@ nav .un-list li::after {
     transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-nav .un-list li:hover::after {
-    
-}
-
 .address {
     font-style: normal;
     display: flex;
@@ -156,7 +152,7 @@ nav .un-list li:hover::after {
 
 .sec-main {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroung\ image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -445,11 +441,11 @@ nav .un-list li:hover::after {
 }
 
 .portfolio .list:hover .overlay {
-    transform: translate(0);
+    transform: translateY(0%);
 }
 
 .portfolio .list:hover .paragraph {
-    transform: translate(0);
+    transform: translateY(0%);
 }
 
 .portfolio .title-third {
