@@ -484,6 +484,11 @@ nav .un-list li:hover::after {
     display: flex;  
 }
 
+.foot .main-container {
+    display: flex;
+    align-items: baseline;
+}
+
 .foot .container {
     width: 254px;
     padding: 0;
