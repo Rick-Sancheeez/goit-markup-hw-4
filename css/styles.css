@@ -167,6 +167,7 @@ margin: 0 auto;
 
     max-width: 1440px;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 
@@ -495,10 +496,6 @@ margin: 0 auto;
 }
 
 /* footer */
-.foot .main-container {
-    display:flex;
-    align-items: baseline;
-}
 
 .foot {
     background-color: #2E2F42;
@@ -509,14 +506,16 @@ margin: 0 auto;
 
 .foot .main-container {
     display: flex;
+    gap: 120px;
     align-items: baseline;
-    padding-left: 156px;
+
+    margin-left: 120px;
+   
 }
 
 .foot .container {
-    width: 254px;
     padding: 0;
-    margin-right: 120px;
+    
 }
 
 .foot .logo {
