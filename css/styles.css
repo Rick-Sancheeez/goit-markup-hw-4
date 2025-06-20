@@ -500,8 +500,6 @@ margin: 0 auto;
 .foot {
     background-color: #2E2F42;
     padding: 100px 0;
-
-    display: flex;  
 }
 
 .foot .main-container {
@@ -509,8 +507,6 @@ margin: 0 auto;
     gap: 120px;
     align-items: baseline;
 
-    margin-left: 120px;
-   
 }
 
 .foot .container {
@@ -556,7 +552,6 @@ margin: 0 auto;
 
 .foot .social-links .un-list {
     display: flex;
-    justify-content: right;
     gap: 16px;
 }
 
